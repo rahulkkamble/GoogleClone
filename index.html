@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />     -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7e4547e55f.js" crossorigin="anonymous"></script>
+    <title>Google</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="gmail.com">Gmail</a></li>
+            <li><a href="photos.com">Images</a></li>
+            <li><span class="iconExtra circleShadow"><img src="https://cdn.icon-icons.com/icons2/1129/PNG/512/buttonsymbolofninedots_80014.png" alt=""></span></li>
+            <li><span class="iconAccount circleShadow"><img src="https://toppng.com/uploads/preview/user-account-management-logo-user-icon-11562867145a56rus2zwu.png" alt=""></span></li>
+        </ul>
+    </div>
+
+    <div class="section-middle">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo img">
+        <div class="inputSearchBar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="inputSearchBar" autocomplete="off" type="text">
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-solid fa-camera"></i>
+        </div>
+        <div class="buttons">
+            <button class="btnSearch">Google Search</button>
+            <button class="btnFeelingLucky">I'm feeling Lucky</button>
+        </div>
+        <div class="bottom-middle">
+            <ul>
+                <li>Google offered in: </li>
+                <li><a href="#" onclick="alert('It will Directed to हिन्दी')">हिन्दी</a></li>
+                <li><a href="#" onclick="alert('It will Directed to বাংলা')"> বাংলা</a></li>
+                <li><a href="#" onclick="alert('It will Directed to తెలుగు')"> తెలుగు </a></li>
+                <li><a href="#" onclick="alert('It will Directed to मराठी')">मराठी </a></li>
+                <li><a href="#" onclick="alert('It will Directed to ગુજરાતી')">ગુજરાતી</a></li>
+                <li><a href="#" onclick="alert('It will Directed to ਪੰਜਾਬੀ')">ਪੰਜਾਬੀ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-section">
+        <div class="country">
+            <a>India</a>
+        </div>
+        <div class="low-footer">
+            <div class="low-left">
+                <ul>
+                    <li><a>About</a></li>
+                    <li><a>Advertising</a></li>
+                    <li><a>Business</a></li>
+                    <li><a>How Search works</a></li>
+                </ul>
+            </div>
+            <div class="low-right">
+                <ul>
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                    <li>Settings</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        const btnSearch = document.querySelector(".btnSearch");
+        const btnLucky = document.querySelector(".btnFeelingLucky");
+        const inpFromSearchBar = document.getElementById("inputSearchBar");
+
+        let getSearchResult = ()=>{
+            var searchStr = inpFromSearchBar.value;
+            var searchURL = `https://www.google.com/search?q=${searchStr}&rlz=1C1ONGR_enIN1013IN1013&oq=${searchStr}&aqs=chrome.0.35i39j0i512l4j46i512j46i175i199i512j0i512l3.10048j0j7&sourceid=chrome&ie=UTF-8`
+            location.href=searchURL;
+        }
+        btnSearch.addEventListener('click', getSearchResult)
+
+        inpFromSearchBar.addEventListener('keypress', (eve)=>{
+            if(eve.key === 'Enter'){
+                getSearchResult();
+            }
+        })
+
+        btnLucky.addEventListener('click', ()=>{
+            location.href = "https://www.google.com/doodles"
+        })
+
+    </script>
+</body>
+
+</html>

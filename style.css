@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    height: auto;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 1.1rem 1.4rem;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    /* background-color: aqua; */
+}
+
+.navbar>ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar>ul>li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+.navbar>ul>li:nth-child(2) {
+    margin-right: 6px;
+}
+
+.circleShadow {
+    display: flex;
+    height: 32px;
+    width: 32px;
+    /* margin-left: 15px; */
+    border-radius: 50%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleShadow:hover {
+    background-color: rgba(215, 213, 212, 0.498);
+}
+
+.iconExtra>img {
+    height: 16px;
+    width: 16px;
+    /* margin-left: 10px;
+    margin-right: 5px; */
+    /* margin-left: 8px; */
+    border: none;
+    opacity: 70%;
+    /* border-radius: 50%; */
+}
+
+.iconAccount>img {
+    height: 30px;
+    width: 30px;
+    /* margin-right: 12px;
+    margin-left: 4px; */
+    border: none;
+    border-radius: 50%;
+}
+
+.section-middle {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: min(6rem, 10rem);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    align-self: center;
+    max-width: 692px;
+    flex-wrap: nowrap;
+    /* margin-bottom: 50%; */
+}
+
+.section-middle>img {
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: auto; */
+}
+
+.inputSearchBar {
+    margin-top: 2rem;
+    display: flex;
+    height: 45px;
+    width: 600px;
+    flex-wrap: nowrap;
+    padding: 5px 10px;
+    border: 0.002rem solid rgba(220, 204, 204, 0.587);
+    border-radius: 25px;
+}
+
+.inputSearchBar:hover {
+    box-shadow: 0 0 2px 2px rgba(128, 128, 128, 0.475);
+}
+
+.inputSearchBar>i {
+    margin: 0 10px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.inputSearchBar>i:nth-child(3):hover,
+.inputSearchBar>i:nth-child(4):hover {
+    border-radius: 50%;
+    /* filter: drop-shadow(5px 5px 2px rgb(0 0 0 / 0.4)); */
+    text-shadow: 0 0 10px;
+}
+
+.inputSearchBar>input {
+    border: none;
+    flex-grow: 1;
+    /* box-shadow: 2px 2px 2px rgba(221, 221, 221, 0.6); */
+    padding: 5px;
+    margin: 0 10px;
+}
+
+.inputSearchBar>input:focus {
+    outline: none;
+}
+
+.buttons {
+    margin-top: 25px;
+    display: flex;
+    white-space: nowrap;
+    width: 60%;
+    justify-content: center;
+
+}
+
+.buttons>button {
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    
+    border-radius: 2px;
+    /* flex-wrap: wrap; */
+    margin: 0 7px;
+    cursor: pointer;
+    background-color: rgba(234, 238, 243, 0.406);
+}
+
+.buttons>button:hover {
+    box-shadow: 0 1px 2px rgba(128, 128, 128, 0.582);
+}
+
+.bottom-middle>ul {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-middle>ul>li {
+    flex-direction: row;
+    margin-right: 8px;
+}
+
+.bottom-middle>ul>li>a {
+    color: rgb(0, 0, 150);
+}
+
+.footer-section {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 5rem;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.country {
+    border-bottom: 2px solid #e4e5e7;
+    padding: 15px 25px;
+    color: grey;
+
+}
+
+.country>a {
+    font-size: 14px;
+    color: grey;
+}
+
+.low-footer {
+    display: flex;
+    padding: 10px 25px;
+    color: grey;
+    justify-content: space-between;
+    /* flex-direction: row; */
+}
+
+.low-footer>ul>li {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.low-left>ul {
+    display: flex;
+}
+
+.low-left>ul>li {
+    display: flex;
+    margin: 5px 15px;
+}
+
+.low-left>ul>li>a {
+    color: grey;
+    font-size: 14px;
+}
+
+.low-right>ul {
+    display: flex;
+}
+
+.low-right>ul>li {
+    display: flex;
+    margin: 5px 15px;
+}
+
+.low-right>ul>li {
+    font-size: 14px;
+    display: flex;
+    margin: 5px 15px;
+}
+
+.fakeH1 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: 25px;
+    padding: 0 10px;
+}
+.fakeImg {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    height: 450px;
+    width: 400px;
+}
+
+/* On screens that are 992px wide or less */
+@media screen and (max-width: 992px) {
+    .section-middle>img {
+        height: 40%;
+        width: 40%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    *{
+        font-size: 10px;
+    }
+    
+}
+
+/* On screens that are 600px wide or less */
+@media screen and (max-width: 600px) {
+    *{
+        font-size: 7px;
+    }
+    
+    .inputSearchBar {
+        width: 80%;
+        height: 3.5rem;
+    }
+
+    .inputSearchBar>input {
+        width: 80%;
+        height: 100%;
+    }
+
+    .inputSearchBar>i {
+        margin: 0 5px;
+        /* font-size: 11px; */
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .inputSearchBar>i:nth-child(4) {
+        display: none;
+    }
+
+    .buttons {
+        margin-top: 25px;
+        display: flex;
+        white-space: nowrap;
+        width: 1rem;
+        justify-content: center;
+    }
+    
+    .buttons>button {
+        padding: 5px 10px;
+        border: none;
+        flex-direction: column;
+        /* font-size: 2vh; */
+        border-radius: 2px;
+        /* flex-wrap: wrap; */
+        margin: 0 7px;
+        cursor: pointer;
+        background-color: rgba(234, 238, 243, 0.406);
+    }
+
+    .footer-section {
+        display: flex;  
+        flex-wrap: wrap;
+    }
+    .low-footer{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .country>a{
+        font-size: 10px;
+    }
+    .low-left{
+        font-size: 3vh;
+        white-space: nowrap;
+        flex-direction: column;
+    }
+    .low-left>ul>li>a{
+        font-size: 10px;
+    }
+    .low-right>ul>li{
+        font-size: 10px;
+    }
+}
